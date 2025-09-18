@@ -1,12 +1,6 @@
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
-
 #### Mandatory Training 2025
-
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
 
 Safety and Security Training – Completed
 
@@ -49,16 +43,9 @@ Information Security and Privacy Awareness – Completed
 Duration: 25 minutes
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
-
 #### Nokia Flow One Overview
-
 #### Course ID: DO00647-K-2300
-
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
 
 Service Fulfilment
 
@@ -183,15 +170,9 @@ CDPA Catalog Driven Provisioning and Activation
 • UIV Components deployed using CSPF Common Software Foundation Platform
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
-
 #### Flow One Introduction to Catalog
-
 #### Course ID: DO00545-K-2300
-
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 
 
 Catalog Features
@@ -273,12 +254,7 @@ Error Recovery
   Undo equals Rollback
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-
-
 #### Flow One eLearning Subscription Curriculum
-
 #### Course ID: DO00592-G-2100
-
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
