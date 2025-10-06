@@ -1,0 +1,113 @@
+REM filepath: c:\Users\ssuhas\Desktop\Nokia\Notes\Imp_vlab_dep-commands
+# InstantLink vLab Deployment & Management Command Reference
+
+---
+
+## 1. Clean Previous Installation & Deploy
+
+```bash
+rm -rf /telecom/ilink/*
+rm -rf /telecom/release_area
+./manage_releases -s installation_specifications/pa-solution.config -i /telecom/ilink -r /telecom/release_area -p /telecom/packages
+```
+
+---
+
+## 2. Configuration File Management
+
+```bash
+cp /telecom/packages/installation_specifications/pa-solution.config /telecom/packages/installation_specifications/pa-solution.config.bak
+vi /telecom/packages/installation_specifications/pa-solution.config
+```
+
+---
+
+## 3. View Installation Logs
+
+```bash
+tail -n 50 /telecom/release_area/runs/run_2025-09-30T204716/install_output.log
+```
+
+---
+
+## 4. Java Environment Path
+
+```bash
+/usr/lib/jvm/java-17-openjdk
+```
+
+---
+
+## 5. PostgreSQL Database Setup
+
+```bash
+sudo -i -u postgres
+psql
+DROP DATABASE IF EXISTS ilink_db;
+DROP USER IF EXISTS ilink_user;
+CREATE DATABASE ilink_db;
+CREATE USER ilink_user WITH PASSWORD 'IlinkPass0465';
+GRANT ALL PRIVILEGES ON DATABASE ilink_db TO ilink_user;
+\q
+```
+
+---
+
+## 6. InstantLink User Environment
+
+```bash
+su - ilink
+. /telecom/ilink/sas/.profile
+```
+
+---
+
+## 7. Component Control Commands
+
+```bash
+ctl_control -s ALL start
+ctl_control -s ALL status
+ctl_control -s ALL stop
+```
+
+---
+
+## 8. Process Monitoring & Management
+
+```bash
+ps -ef | grep ilink
+ps -ef | grep java
+ps -ef | grep ManagementAgent
+kill -9 771833
+pkill -u ilink -f ManagementAgent
+ps -ef | grep ManagementAgent
+```
+
+---
+
+## 9. PostgreSQL Activity Query
+
+```sql
+SELECT pid, usename, datname, application_name, state 
+FROM pg_stat_activity 
+WHERE datname = 'ilink_db';
+```
+
+---
+
+## 10. Service & UI Access
+
+```bash
+curl -v http://localhost:44080/
+ssh -L 8888:localhost:44080 ilink@100.84.119.60
+```
+- Access UI: [http://localhost:8888/sas5/](http://localhost:8888/sas5/)
+- Direct UI: [http://100.84.119.60:44080/sas5/](http://100.84.119.60:44080/sas5/)
+
+---
+
+## 11. Hostname Check
+
+```bash
+hostname
+```
